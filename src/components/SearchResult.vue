@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="wrapper">
-      <h2>RESULTADO</h2>
+      <h3>RESULTADO</h3>
       <div class="result">
         <p>{{msg}}</p>
         <ul class="list list-results">
@@ -32,6 +32,7 @@ export default {
   },
   methods: {
     getfilteredData: function () {
+      console.log(this.search)
       if (this.search !== '') {
         this.filteredDataBySearch = data.filter(obj => {
           return obj.title.indexOf(this.search) >= 0 || obj.desc.indexOf(this.search) >= 0
@@ -48,9 +49,14 @@ export default {
   },
   mounted () {
     this.$parent.$on('search', (search) => {
-      this.search = search
+      this.search = search || ''
       this.getfilteredData()
     })
   }
 }
 </script>
+<style scoped>
+  .list-results{
+    padding: 0%;
+  }
+</style>

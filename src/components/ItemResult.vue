@@ -2,7 +2,7 @@
   <li class="list-item item">
     <div class="item-title">
       <a class="link" :href="item.link">
-        <h2 class="title">{{ item.title || capitalize }} </h2>
+        <h2 class="title">{{ item.title || capitalize }}</h2>
       </a>
     </div>
     <div class="item-link">
@@ -18,15 +18,14 @@
 
 <script>
 export default {
-  name: 'ItemResult',
-  data () {
-    return {
-    }
+  name: "ItemResult",
+  data() {
+    return {};
   },
   filters: {
     // this filter will can be used to capitalise words
     capitalize: item => {
-      return item.toUpperCase()
+      return item.toUpperCase();
     }
   },
   props: {
@@ -36,19 +35,22 @@ export default {
       required: true
     }
   }
-}
+};
 </script>
 <style scoped>
 .list-item {
   text-align: left;
   list-style: none;
   margin: 30px 0;
-  background: #eaeaea;
+  background: #f9f9f9;
   padding: 10px;
+  max-width: 50%;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
 }
 .title,
 .link-text,
 .description {
-  margin: 5px 0;
+  margin: 3px 0;
 }
 </style>
