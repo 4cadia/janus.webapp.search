@@ -1,15 +1,15 @@
-# Vue.js Dapp
+# Janus Dapp Search
 
-> A Vue.js project
+> Search front-end is an interface that allows the user to search for websites and contents that were indexed in the Janus platform. The search interface is an easy way to find websites and contents uploaded on the blockchain, it locates the matching tags the user is looking for with the ones on the system and return a list of results that may interest for the user.
 
-## Build Setup
+
+![](header.png)
+
+## Installation
 
 ``` bash
 # install dependencies
 npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
 
 # build for production with minification
 npm run build
@@ -35,22 +35,19 @@ npm run fix
 # run build production and send the dist folder to another branch
 npm run deploy
 ```
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
-## Git Flow
+## Contributing
 
- - Create a feature from master named: "feature/[ JIRA TAG ]"
+1. Fork it (<https://github.com/4cadia/janus.cli.indexer/fork>)
+2. Create your feature branch (`git checkout -b feature/fooBar`)
+3. Commit your changes (`git commit -am 'Add some fooBar'`)
+4. Push to the branch (`git push origin feature/fooBar`)
+5. Create a new Pull Request
 
- - Commit and push alterations from feature
-
- - Checkout to the Develop branch and then Merge/Pull Request your feature 
-
- - Push the alterations on Develop branch
-
- - Checkout to the Master branch and then Merge/Pull Request your feature 
-
- - Push the alterations on Master branch
-
- - Run `npm run build` to generate Dist folder
-
- - Run `npm run deploy` to send Dist folder to 'dist' named branch
+<!-- Markdown link & img dfn's -->
+[npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/datadog-metrics
+[npm-downloads]: https://img.shields.io/npm/dm/datadog-metrics.svg?style=flat-square
+[travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
+[travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
+[wiki]: https://github.com/yourname/yourproject/wiki
